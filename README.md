@@ -1,9 +1,9 @@
 # Cloud Removal in Full-disk Solar Images Using Deep Learning
-This project leverages deep learning for cloud removal in full-disk solar images, encompassing both datasets and network structure. 
+This project leverages deep learning for cloud removal in full-disk solar images, encompassing both datasets, model parameters and network structure. 
 ## Setup
 Project Clone to Local
 ```
-git clone https://github.com/dupeng24/cloud-removal.git
+git clone https://github.com/dupeng24/full-disk-cloud-removal.git
 ```
 To install dependencies:
 
@@ -20,7 +20,7 @@ To conduct cloud detection and categorization, please change the name of the cor
 python finallyquality.py
 ```
 ## Training
-Please run the following to generate the h5 dataset file:
+Please download the data compression package full-disk images data.zip, divide the training set in it into cloud and clean, please make sure that the cloud contamination image and the labeled image have the same name. Please run the following to generate the h5 dataset file:
 ```
 python makedataset.py
 ```
@@ -29,9 +29,10 @@ To train the models in the paper, run these commands:
 python train.py
 ```
 ## Testing
-To conduct testing, save the trained model weights in the checkpoint folder and rename them accordingly,run these commands:
+To conduct testing, please download the model parameter zip without unzipping it and place it directly under a checkpoint folder. Set the input and output paths, run these commands:
 ```
 python test.py
 ```
 ## Acknowledgement
-The authors express their gratitude to the Global Oscillation Network Group (GONG) and the Huairou Solar Observing Station (HSOS) for providing the data. 
+Data were acquired by GONG instruments operated by NISP/NSO/AURA/NSF with contribution from NOAA. 
+The authors express their gratitude to the Global Oscillation Network Group (GONG) for providing the data. 
