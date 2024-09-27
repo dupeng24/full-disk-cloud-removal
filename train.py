@@ -77,7 +77,9 @@ def train(G_Model, G_optimizer, D_Model, D_optimizer, cur_epoch, argspar, datase
     msssim_loss = msssim
     loss_values = []
     total_loss_value=0
-
+    l_pixel_num = 2
+    msssim_loss_num = 0.8
+    a_loss_num = 0.0005
     
     metric = [['PSNR', 'SSIM']]
     # train
@@ -118,9 +120,9 @@ def train(G_Model, G_optimizer, D_Model, D_optimizer, cur_epoch, argspar, datase
             a_loss = 1-fake_out
             
 
-            total_loss = 2 * l_pixel + \
-                        0.8*msssim_loss_ + \
-                        0.0005*a_loss
+            total_loss = l_pixel_num * l_pixel + \
+                        msssim_loss_num*msssim_loss_ + \
+                        a_loss_num*a_loss
             total_loss.backward()
             G_optimizer.step()
             D_optimizer.step()
