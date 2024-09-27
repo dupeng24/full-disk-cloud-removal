@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Feb 12 20:00:46 2020
-
-@author: Administrator
-"""
-
 import os
 import os.path
 import random
