@@ -121,15 +121,15 @@ def tensor2cuda(img):
 def load_excel(x):
     data = pd.DataFrame(x)
     os.makedirs('log', exist_ok=True)
-    writer = pd.ExcelWriter('./log/allcloud_onlyca.xlsx')		# 写入Excel文件
-    data.to_excel(writer, 'PSNR-SSIM', float_format='%.5f')		# ‘page_1’是写入excel的sheet名
+    writer = pd.ExcelWriter('./log/allcloud_onlyca.xlsx')		
+    data.to_excel(writer, 'PSNR-SSIM', float_format='%.5f')		
     writer._save()
     writer.close()
 
 def load_excel1(x,epoch):
     data = pd.DataFrame(x)
     os.makedirs('log', exist_ok=True)
-    writer = pd.ExcelWriter('./log/oursmulti_'+str(epoch)+'_onlyca.xlsx')		# 写入Excel文件
-    data.to_excel(writer, 'PSNR-SSIM', float_format='%.5f')		# ‘page_1’是写入excel的sheet名
+    writer = pd.ExcelWriter('./log/oursmulti_'+str(epoch)+'_onlyca.xlsx')		
+    data.to_excel(writer, 'PSNR-SSIM', float_format='%.5f')		
     writer._save()
     writer.close()
