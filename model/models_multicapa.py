@@ -129,8 +129,8 @@ class Bottle2neck(nn.Module):
 
         super(Bottle2neck, self).__init__()
 
-        width = int(math.floor(planes * (baseWidth / 64.0)))  #下整数
-        self.conv1 = nn.Conv2d(inplanes, width * scale, kernel_size=1, bias=False) #1*1调整通道数
+        width = int(math.floor(planes * (baseWidth / 64.0)))  
+        self.conv1 = nn.Conv2d(inplanes, width * scale, kernel_size=1, bias=False) #1*1 channal
         self.bn1 = nn.BatchNorm2d(width * scale)
 
         if scale == 1:
@@ -399,7 +399,7 @@ class Decloud(nn.Module):
         self.enhancer = Enhancer(32, 32)
 
     def forward(self, input):
-        x, x_layer1, x_layer2,x3 = self.encoder(input) #x3是第一层
+        x, x_layer1, x_layer2,x3 = self.encoder(input) #x3 is one
 
         x_mid = self.mid_conv(x)
 
