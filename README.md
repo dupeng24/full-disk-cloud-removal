@@ -1,5 +1,6 @@
 # Cloud Removal in Full-disk Solar Images Using Deep Learning
 This project leverages deep learning for cloud removal in full-disk solar images, encompassing both datasets, model parameters and network structure. 
+![5](https://github.com/user-attachments/assets/df9370c6-4862-4654-b445-f7fa0be70be8)
 ## Setup
 Project Clone to Local
 ```
@@ -20,7 +21,7 @@ To conduct cloud detection and categorization, please change the name of the cor
 python finallyquality.py
 ```
 ## Training
-Please download the data compression package full-disk images data.zip, divide the training set in it into cloud and clean, please make sure that the cloud contamination image and the labeled image have the same name. Please run the following to generate the h5 dataset file:
+Please download the data compression package full-disk images data.zip, divide the training set in it into cloud and clean, please make sure that the cloudy image and the labeled image have the same name. Please run the following to generate the h5 dataset file:
 ```
 python makedataset.py
 ```
@@ -33,6 +34,19 @@ To conduct testing, please download the model parameter zip without unzipping it
 ```
 python test.py
 ```
+## Examples of experimental results
+input
+
+<img src="https://github.com/user-attachments/assets/22511be3-1b47-4099-af50-812a32c53b2e" width="300px">
+<img src="https://github.com/user-attachments/assets/98ee5493-2d7f-4a8a-80ef-01f3cca7b79f" width="300px">
+<img src="https://github.com/user-attachments/assets/14869ec5-b442-4b62-b895-3c143a40e616" width="300px">
+
+output
+
+<img src="https://github.com/user-attachments/assets/58aa78bb-9288-43d0-be77-d0395ec79e58" width="300px">
+<img src="https://github.com/user-attachments/assets/e303c24c-d487-43bb-ba22-a3230925598b" width="300px">
+<img src="https://github.com/user-attachments/assets/39003091-7849-42f9-86aa-3fc0dbb9b2ae" width="300px">
+
 ## Acknowledgement
 Data were acquired by GONG instruments operated by NISP/NSO/AURA/NSF with contribution from NOAA. 
 The authors express their gratitude to the Global Oscillation Network Group (GONG) for providing the data. 
