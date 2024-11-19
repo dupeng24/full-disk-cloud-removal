@@ -37,15 +37,15 @@ python test.py
 ## Examples of experimental results
 input
 
-<img src="https://github.com/user-attachments/assets/22511be3-1b47-4099-af50-812a32c53b2e" width="300px">
-<img src="https://github.com/user-attachments/assets/98ee5493-2d7f-4a8a-80ef-01f3cca7b79f" width="300px">
-<img src="https://github.com/user-attachments/assets/14869ec5-b442-4b62-b895-3c143a40e616" width="300px">
+<img src="https://github.com/user-attachments/assets/22511be3-1b47-4099-af50-812a32c53b2e" width="200px">
+<img src="https://github.com/user-attachments/assets/98ee5493-2d7f-4a8a-80ef-01f3cca7b79f" width="200px">
+<img src="https://github.com/user-attachments/assets/14869ec5-b442-4b62-b895-3c143a40e616" width="200px">
 
 output
 
-<img src="https://github.com/user-attachments/assets/58aa78bb-9288-43d0-be77-d0395ec79e58" width="300px">
-<img src="https://github.com/user-attachments/assets/e303c24c-d487-43bb-ba22-a3230925598b" width="300px">
-<img src="https://github.com/user-attachments/assets/39003091-7849-42f9-86aa-3fc0dbb9b2ae" width="300px">
+<img src="https://github.com/user-attachments/assets/58aa78bb-9288-43d0-be77-d0395ec79e58" width="200px">
+<img src="https://github.com/user-attachments/assets/e303c24c-d487-43bb-ba22-a3230925598b" width="200px">
+<img src="https://github.com/user-attachments/assets/39003091-7849-42f9-86aa-3fc0dbb9b2ae" width="200px">
 
 ## Acknowledgement
 Data were acquired by GONG instruments operated by NISP/NSO/AURA/NSF with contribution from NOAA. 
