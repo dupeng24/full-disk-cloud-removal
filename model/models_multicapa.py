@@ -483,7 +483,7 @@ class Discriminator(nn.Module):
         return torch.sigmoid(self.net(x).view(batch_size))
 
 if __name__ == '__main__':
-    net = fusion_refine(None,None)
+    net = cpa(None,None)
     input_tensor = torch.Tensor(np.random.random((2,1,1024,1024)))
     start = time.time()
     out = net(input_tensor)
