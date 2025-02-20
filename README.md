@@ -1,5 +1,9 @@
 # Cloud Removal in Full-disk Solar Images Using Deep Learning
 This project leverages deep learning for cloud removal in full-disk solar images, encompassing both datasets, model parameters and network structure. 
+
+**Title of the Article**: [Cloud Removal in Full-disk Solar Images Using Deep Learning](https://iopscience.iop.org/article/10.3847/1538-4365/ad93ca)  
+**DOI**: [10.3847/1538-4365/ad93ca](https://doi.org/10.3847/1538-4365/ad93ca)  
+
 ![5](https://github.com/user-attachments/assets/df9370c6-4862-4654-b445-f7fa0be70be8)
 ## Setup
 Project Clone to Local
